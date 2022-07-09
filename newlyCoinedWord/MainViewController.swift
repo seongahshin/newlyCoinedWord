@@ -48,5 +48,18 @@ class MainViewController: UIViewController {
         buttonName.setTitleColor(.black, for: .normal)
     }
 
-
+    // 탭제스쳐 키보드 내리기
+    @IBAction func tapGestureRecognized(_ sender: Any) {
+        view.endEditing(true)
+    }
+    
+    // 검색 버튼 누르면 키보드 내리기
+    @IBAction func buttonClicked(_ sender: UIButton) {
+        view.endEditing(true)
+    }
+    
+    // retun 버튼 누르면 키보드 내리기
+    @IBAction func returnButtonClicked(_ sender: Any) {
+    }
+    
 }

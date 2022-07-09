@@ -28,6 +28,9 @@
                                         </constraints>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain"/>
+                                        <connections>
+                                            <action selector="buttonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QDQ-Qg-iEh"/>
+                                        </connections>
                                     </button>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2fv-pi-Xkr">
                                         <rect key="frame" x="20" y="20" width="257" height="34"/>
@@ -36,6 +39,9 @@
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <action selector="returnButtonClicked:" destination="BYZ-38-t0r" eventType="editingDidEndOnExit" id="Xti-F8-8rC"/>
+                                        </connections>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BW5-Pl-Vch">
                                         <rect key="frame" x="20" y="57" width="24" height="14"/>
@@ -110,6 +116,7 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="wNN-ph-Qub" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="JOp-Xe-6iT"/>
                             <constraint firstItem="x6N-hX-l1B" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Lz3-ic-4hZ"/>
@@ -120,6 +127,9 @@
                             <constraint firstItem="ktK-sc-vC4" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="tA4-q2-t9k"/>
                             <constraint firstItem="x6N-hX-l1B" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="vKx-hh-Cuq"/>
                         </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="20U-Rd-rlP" appends="YES" id="2cx-p8-CYH"/>
+                        </connections>
                     </view>
                     <connections>
                         <outlet property="button1" destination="BW5-Pl-Vch" id="3fd-It-r88"/>
@@ -131,6 +141,11 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="20U-Rd-rlP">
+                    <connections>
+                        <action selector="tapGestureRecognized:" destination="BYZ-38-t0r" id="H2i-mF-3Df"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="-26.086956521739133" y="85.714285714285708"/>
         </scene>
