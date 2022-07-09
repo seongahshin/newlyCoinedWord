@@ -122,6 +122,11 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="button1" destination="BW5-Pl-Vch" id="3fd-It-r88"/>
+                        <outlet property="button2" destination="Xrm-Hr-xta" id="12X-2v-JgZ"/>
+                        <outlet property="button3" destination="hhw-Z7-daB" id="yea-MP-wg9"/>
+                        <outlet property="button4" destination="aQ9-vn-QHt" id="Vbc-Lj-SK1"/>
+                        <outlet property="searchButton" destination="ELw-7O-5qN" id="rrD-bu-RXR"/>
                         <outlet property="searchTextField" destination="2fv-pi-Xkr" id="Rcz-hV-4ik"/>
                     </connections>
                 </viewController>
