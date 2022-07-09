@@ -107,8 +107,11 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="x6N-hX-l1B">
                                 <rect key="frame" x="57" y="298" width="300" height="300"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ktK-sc-vC4">
-                                <rect key="frame" x="186" y="437.5" width="42" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Labelㄹㄹㄹㄹㄹ\" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ktK-sc-vC4">
+                                <rect key="frame" x="147" y="438" width="120" height="20.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="42" id="Fcx-pm-d3X"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -136,6 +139,7 @@
                         <outlet property="button2" destination="Xrm-Hr-xta" id="12X-2v-JgZ"/>
                         <outlet property="button3" destination="hhw-Z7-daB" id="yea-MP-wg9"/>
                         <outlet property="button4" destination="aQ9-vn-QHt" id="Vbc-Lj-SK1"/>
+                        <outlet property="resultLabel" destination="ktK-sc-vC4" id="ozq-aT-BXN"/>
                         <outlet property="searchButton" destination="ELw-7O-5qN" id="rrD-bu-RXR"/>
                         <outlet property="searchTextField" destination="2fv-pi-Xkr" id="Rcz-hV-4ik"/>
                     </connections>
