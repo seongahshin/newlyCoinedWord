@@ -18,6 +18,7 @@ class MainViewController: UIViewController {
     @IBOutlet weak var button4: UIButton!
     
     @IBOutlet weak var resultLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -47,6 +48,9 @@ class MainViewController: UIViewController {
         buttonName.layer.borderWidth = 1
         buttonName.backgroundColor = .white
         buttonName.setTitleColor(.black, for: .normal)
+        buttonName.setTitle(searchTextField.text, for: .normal)
+        buttonName.titleLabel?.font = .systemFont(ofSize: 10)
+        
     }
 
     // 탭제스쳐 키보드 내리기
@@ -58,12 +62,16 @@ class MainViewController: UIViewController {
     func searchWordMeaning() {
         if searchTextField.text == "점메추" {
             resultLabel.text = "점심 메뉴 추천의 줄임말"
+            buttonDesign(button1)
         } else if searchTextField.text == "억텐" {
             resultLabel.text = "억지 텐션의 줄임말. 반대말로 진짜 텐션은 찐텐이라고 한다."
+            buttonDesign(button2)
         } else if searchTextField.text == "보배" {
             resultLabel.text = "보조배터리"
+            buttonDesign(button3)
         } else if searchTextField.text == "구취" {
             resultLabel.text = "구독 취소의 줄임말. 유튜브 채널을 구독 취소할 때 많이 쓰인다."
+            buttonDesign(button4)
         }
     }
     
