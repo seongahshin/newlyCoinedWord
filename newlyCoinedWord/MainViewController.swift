@@ -58,20 +58,24 @@ class MainViewController: UIViewController {
         view.endEditing(true)
     }
     
+    var explain: [String] = ["점메추", "억텐", "보배", "구취"]
     // 검색 단어와 뜻 연결
     func searchWordMeaning() {
-        if searchTextField.text == "점메추" {
-            resultLabel.text = "점심 메뉴 추천의 줄임말"
+        switch searchTextField.text {
+        case explain[0]:
+            resultLabel.text = "점심메뉴 추천의 줄임말"
             buttonDesign(button1)
-        } else if searchTextField.text == "억텐" {
+        case explain[1]:
             resultLabel.text = "억지 텐션의 줄임말. 반대말로 진짜 텐션은 찐텐이라고 한다."
             buttonDesign(button2)
-        } else if searchTextField.text == "보배" {
+        case explain[2]:
             resultLabel.text = "보조배터리"
             buttonDesign(button3)
-        } else if searchTextField.text == "구취" {
+        case explain[3]:
             resultLabel.text = "구독 취소의 줄임말. 유튜브 채널을 구독 취소할 때 많이 쓰인다."
             buttonDesign(button4)
+        default:
+            resultLabel.text = "사전에 없습니다."
         }
     }
     
